@@ -1,10 +1,7 @@
 #ifndef BOOK_STORE_HPP
 #define BOOK_STORE_HPP
 
-/**
- * You don't need to edit this file, although you can
- * 	if you wish to add helper methods.
- */
+
 
 //
 #include "DoublyLinkedList.hpp"
@@ -17,13 +14,13 @@ namespace CPSC131
 	//
 	namespace BookStore
 	{
-		/// YOUR WELCOME
+
 		class InsufficientInventory : public std::runtime_error
 		{
 			public:
 				using std::runtime_error::runtime_error;
 		};
-		/// YOUR WELCOME
+
 		
 		//
 		class BookStore
