@@ -1,0 +1,16 @@
+
+*.o
+*.swp
+*.gch
+*.tmp
+main
+main-tests
+leak-checker
+results*.json
+
+grader-output-readme/
+grader-output-author-tagging/
+
+*~
+
+
