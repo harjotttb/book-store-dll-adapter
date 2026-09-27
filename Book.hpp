@@ -2,10 +2,6 @@
 #define BOOK_HPP
 
 
-/**
- * You do not need to edit this file,
- * 	though you can if you wish to add additional helper methods
- */
 
 
 //
