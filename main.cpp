@@ -1,11 +1,4 @@
 
-/**
- * You don't need to edit this file, although you can if you wish.
- * This source file will not be graded.
- * 
- * This is a live TUI for the BookStore you're working on. You can
- * use it to manually play around in your store.
- */
 
 //
 #include "BookStore.hpp"
