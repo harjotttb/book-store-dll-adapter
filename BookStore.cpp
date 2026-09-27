@@ -1,13 +1,4 @@
 
-/**
- * TODO: Implement all the BookStore methods below.
- * Name: Harjot Bhangu
- * CWID: 828073312
- * Email: harjottb@csu.fullerton.edu
- * Note you'll have to remain inside the CPSC131::BookStore namespace.
- */
-
-//
 #include "BookStore.hpp"
 
 
@@ -27,7 +18,6 @@ using std::stringstream;
 namespace CPSC131::BookStore
 {
 
-	/// Your welcome
 	BookStore::BookStore() {}
 	
 	///	Copy CTOR
@@ -157,14 +147,7 @@ namespace CPSC131::BookStore
 	
 	/**
 	 * Print out inventory.
-	 * Should be in a particular way to earn unit test points.
-	 * Example (ignore the asterisks at the left of this comment block):
-	 * 
-	 * *** Book Store Inventory ***
-	 * "Book1", by Author1 [123] (5 in stock)
-	 * "Book2", by Author2 [456] (19 in stock)
-	 * 
-	 * Should print a trailing std::endl after the last book line, for the unit tests
+
 	 */
 	void BookStore::printInventory() const
 	{
@@ -194,13 +177,7 @@ namespace CPSC131::BookStore
 	
 	/**
 	 * Sell a book to a customer!
-	 * 
-	 * Takes a Book reference, the selling price of the book, and the quantity of books sold
-	 * 
-	 * If we don't have enough of this book in stock for the quantity the customer wants to purchase,
-	 * 	throw an std::range_error
-	 * 
-	 * Otherwise, adjust the stock available in our store, and update our account balance.
+
 	 */
 	void BookStore::sellToCustomer(Book& book, size_t price_cents, size_t quantity)
 	{
