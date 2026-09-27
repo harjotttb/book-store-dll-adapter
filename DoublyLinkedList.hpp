@@ -2,31 +2,6 @@
 #define MY_DOUBLY_LINKED_LIST_HPP
 
 
-/**
- * TODO: Implement DoublyLinkedList, its Node, and its Iterator!
- * Name: Harjot Bhangu
- * CWID: 828073312
- * Email: harjottb@csu.fullerton.edu
- * 
- * I've left some methods filled out for you,
- * 	and stubbed out some structure, to reduce difficulty.
- * 
- * You may add helper methods as you see fit,
- * 	as long as you can still pass all unit tests.
- * 
- * Notice we're inside a namespace here.
- * The DLL is inside a namespace called DoublyLinkedList,
- * 	which is itself inside a namespace called CPSC131
- * This means, if you'd like to play around with your class later,
- * 	you'll need to access it like so:
- * ::CPSC131::DoublyLinkedList::DoublyLinkedList<int> list;
- * 
- * Look into main.cpp and CPP_Tests.cpp for examples of using
- * 	the DLL and your BookStore. But don't worry too much, as you
- * 	only need to implement these classes
- * (main and tests are already done for you)
- */
-
 
 //
 #include <iostream>
@@ -50,7 +25,6 @@ namespace CPSC131::DoublyLinkedList
 			/**
 			 * Node class, representing a single item in our linked list
 			 */
-			// TODO: Complete all class methods
 			class Node
 			{
 				public:
@@ -110,11 +84,11 @@ namespace CPSC131::DoublyLinkedList
 					}
 					
 					/// Get the element this node holds
-					///	YOUR WELCOME
+		
 					T& getElement() { return this->element_; }
 					
 					/// Return a reference to the element
-					///	YOUR WELCOME
+	
 					T& operator*() { return this->element_; }
 					
 				private:
@@ -125,11 +99,7 @@ namespace CPSC131::DoublyLinkedList
 			
 			/**
 			 * Nested Iterator class.
-			 * This allows user code to refer to the Iterator's type as:
-			 * 
-			 * CPSC131::DoublyLinkedList::DoublyLinkedList<int>::Iterator
-			 * 
-			 * (as opposed to specifying the template argument two times)
+
 			 */
 			class Iterator
 			{
@@ -169,7 +139,7 @@ namespace CPSC131::DoublyLinkedList
 					}
 					
 					///	Return true if this iterator has hit its end; false otherwise
-					/// YOUR WELCOME
+
 					bool isAtEnd()
 					{
 						return this->cursor_ == nullptr;
@@ -397,21 +367,6 @@ namespace CPSC131::DoublyLinkedList
 			 * Clear the list and assign values from another list.
 			 * The 'first' iterator points to the first item copied from the other list.
 			 * The 'last' iterator points to the last item copied from the other list.
-			 * 
-			 * Example:
-			 * 	Suppose we have a source list like {8, 4, 3, 2, 7, 1}
-			 * 	Suppose first points to the 4 node
-			 *	Suppose last points to the 7 node
-			 * 	We should end up with our list becoming: {4, 3, 2, 7}
-			 *
-			 * If the user code sends out-of-order iterators,
-			 * 	just copy from 'first' to the end of the source list
-			 * 
-			 * Example:
-			 *  If we have the same source list {8, 4, 3, 2, 7, 1},
-			 *  and first points to the 7 node,
-			 *  and last points to the 4 node,
-			 *  we would end up with: {7, 1}
 			 */
 			void assign(Iterator first, Iterator last)
 			{
